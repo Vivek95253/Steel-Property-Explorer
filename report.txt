@@ -1,0 +1,43 @@
+STEEL PROPERTY EXPLORER — ANALYTICS REPORT (pure Python)
+==================================================================
+Input file: steel_samples.csv
+Total samples: 50
+
+[1] SUMMARY STATISTICS
+Metric         | Count | Mean   | StdDev  | Min   | Q1    | Median | Q3     | Max    | Outliers
+---------------+-------+--------+---------+-------+-------+--------+--------+--------+---------
+Carbon_pct     | 50    | 0.446  | 0.197   | 0.15  | 0.269 | 0.445  | 0.597  | 0.798  | 0       
+Manganese_pct  | 50    | 0.906  | 0.329   | 0.319 | 0.609 | 0.919  | 1.146  | 1.498  | 0       
+Silicon_pct    | 50    | 0.299  | 0.135   | 0.061 | 0.194 | 0.306  | 0.427  | 0.5    | 0       
+QuenchTemp_C   | 50    | 839.68 | 37.188  | 780.0 | 804.0 | 846.0  | 870.0  | 899.0  | 0       
+TemperTemp_C   | 50    | 396.86 | 144.517 | 154.0 | 267.0 | 391.5  | 520.0  | 640.0  | 0       
+TemperTime_min | 50    | 95.26  | 44.779  | 33.0  | 59.0  | 88.5   | 127.0  | 178.0  | 0       
+Hardness_HRC   | 50    | 29.764 | 13.71   | 10.0  | 19.5  | 27.95  | 41.6   | 64.2   | 0       
+UTS_MPa        | 50    | 881.88 | 246.798 | 497.0 | 698.0 | 843.5  | 1092.0 | 1502.0 | 0       
+Yield_MPa      | 50    | 609.42 | 168.311 | 335.0 | 493.0 | 584.0  | 740.0  | 1049.0 | 0       
+Elongation_pct | 50    | 22.536 | 3.458   | 15.2  | 20.1  | 22.35  | 25.2   | 29.0   | 0       
+
+[2] CORRELATION & REGRESSION (Hardness vs Carbon)
+Pearson correlation (Carbon% vs Hardness HRC): 0.656
+Linear regression  Hardness ≈ 45.599 * Carbon_pct + 9.449   (R^2 = 0.43)
+Note: Positive slope indicates higher carbon tends to increase hardness.
+
+[3] TOP-5 SAMPLES BY HARDNESS (HRC)
+SampleID | Carbon_pct | QuenchTemp_C | TemperTemp_C | TemperTime_min | Hardness_HRC
+---------+------------+--------------+--------------+----------------+-------------
+S041     | 0.671      | 868          | 235          | 46             | 64.2        
+S020     | 0.629      | 870          | 216          | 117            | 55.2        
+S007     | 0.753      | 870          | 353          | 137            | 50.1        
+S048     | 0.762      | 805          | 356          | 34             | 48.2        
+S038     | 0.767      | 847          | 436          | 104            | 46.9        
+
+[4] TOP-5 SAMPLES BY UTS (MPa)
+SampleID | Carbon_pct | Hardness_HRC | UTS_MPa | Yield_MPa | Elongation_pct
+---------+------------+--------------+---------+-----------+---------------
+S041     | 0.671      | 64.2         | 1502    | 1049      | 15.2          
+S020     | 0.629      | 55.2         | 1358    | 940       | 17.7          
+S007     | 0.753      | 50.1         | 1262    | 870       | 16.6          
+S048     | 0.762      | 48.2         | 1223    | 818       | 19.2          
+S038     | 0.767      | 46.9         | 1199    | 789       | 18.3          
+
+End of report.
