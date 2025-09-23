@@ -1,6 +1,6 @@
-# Steel Property Explorer (Pure Python)
+# Process Optimization and Data Analytics
 
-A simple, **no-third‑party** Python project that analyzes a small metallurgical dataset (steel samples) and produces a text report with summary statistics, outlier counts, correlations, and a simple linear regression (**Hardness vs Carbon**).
+Performed regression analysis on blast furnace data to identify key factors affecting Si content in hot metal and analyzed impact of coke rate, oxygen enrichment and tempresure on silicon variability.
 
 ## Why this project?
 - **Pure Python:** Only built-ins; no NumPy/Pandas/Matplotlib.
@@ -27,10 +27,7 @@ The script prints and saves a `report.txt` containing:
 - Pearson correlation and linear regression for **Hardness vs Carbon**
 - Top-5 samples by **Hardness** and **UTS**
 
-## Resume Bullets (pick 2–3)
-- Built a **pure‑Python** analytics tool for steel samples—implemented CSV parsing, descriptive stats, **IQR outlier detection**, **Pearson correlation**, and **linear regression** from scratch; generated an automated report.
-- Analyzed **composition–process–property** relationships (e.g., **Hardness vs Carbon**) and surfaced Top‑N insights (hardness, UTS) for metallurgical decision support.
-- Wrote clean CLI code with zero third‑party dependencies; organized data and outputs for reproducibility.
+
 
 ## Keywords
 Python, Pure Python, CLI, CSV Parsing, Descriptive Statistics, Quartiles/IQR, Pearson Correlation, Linear Regression, Top‑N Analysis, Metallurgy, Materials Analytics.
